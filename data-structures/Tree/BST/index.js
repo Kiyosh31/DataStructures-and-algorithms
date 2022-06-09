@@ -203,7 +203,7 @@ console.log('Contains position 9: ', bst.contains(9))
 console.log('in-oder: ', bst.dfsInOrder())
 
 // pre-order: 15, 3, 2, 12, 36, 28, 39
-console.log('pre-oder: ', bst.dfsPreOrder())
+console.log('pre-order: ', bst.dfsPreOrder())
 
 // post-order: 2, 12, 3, 28, 39, 36, 15
 console.log('post-order: ', bst.dfsPostOrder())
