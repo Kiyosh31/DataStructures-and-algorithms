@@ -49,6 +49,7 @@ class BST {
     searchTree(this.root)
   }
 
+  // We look left because is where the smallest numbers are
   min() {
     let currentNode = this.root
 
@@ -60,6 +61,7 @@ class BST {
     return currentNode.value
   }
 
+  // We look right because is where the greatest numbers are
   max() {
     let currentNode = this.root
 
@@ -188,13 +190,13 @@ bst.insert(39)
 
 console.log(bst)
 
-console.log(bst.size())
+console.log('Size: ', bst.size())
 
-console.log(bst.min())
-console.log(bst.max())
+console.log('Min: ', bst.min())
+console.log('Max: ', bst.max())
 
-console.log(bst.contains(2))
-console.log(bst.contains(9))
+console.log('Contains position 2: ', bst.contains(2))
+console.log('Contains position 9: ', bst.contains(9))
 
 // DFS!!!
 // in-order: 2, 3, 12, 15, 28, 36, 39
@@ -208,4 +210,4 @@ console.log('post-order: ', bst.dfsPostOrder())
 
 // BFS!!!
 // 15, 3, 36, 2, 12, 28, 39
-console.log(bst.bfs())
+console.log('BFS: ', bst.bfs())
