@@ -179,6 +179,11 @@ class BST {
   }
 }
 
+// BST shape
+// 15
+// 3 || 36
+// 2 12 || 28 39
+
 const bst = new BST(15)
 
 bst.insert(3)
