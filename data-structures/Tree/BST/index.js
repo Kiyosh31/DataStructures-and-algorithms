@@ -216,3 +216,26 @@ console.log('post-order: ', bst.dfsPostOrder())
 // BFS!!!
 // 15, 3, 36, 2, 12, 28, 39
 console.log('BFS: ', bst.bfs())
+
+// Another BST
+// 11
+// 7 || 15
+// 5 9 || 13 20
+// 3 || 8 10 || 12 14 || 18 25
+const bst1 = new BST(11)
+bst1.insert(7)
+bst1.insert(15)
+bst1.insert(5)
+bst1.insert(9)
+bst1.insert(13)
+bst1.insert(20)
+bst1.insert(3)
+bst1.insert(8)
+bst1.insert(10)
+bst1.insert(12)
+bst1.insert(14)
+bst1.insert(18)
+bst1.insert(25)
+
+console.log('BST1', bst1)
+console.log('BFS1: ', bst1.bfs())
